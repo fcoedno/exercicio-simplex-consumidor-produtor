@@ -10,12 +10,12 @@ public class QuotesChannel {
     }
 
     public void put(String quote) {
-        System.out.printf("Inserindo item. Tamanho atual: %d\n", size());
+        System.out.printf("Inserting a quote. Current size: %d\n", size());
         messages.add(quote);
     }
 
     public String get() {
-        System.out.printf("Removendo item. Tamanho atual: %d\n", size());
+        System.out.printf("Removing a quote. Current size: %d\n", size());
         return messages.poll();
     }
 

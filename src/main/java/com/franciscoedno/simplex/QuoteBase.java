@@ -8,6 +8,8 @@ import java.util.Random;
 
 public class QuoteBase {
     public String peekRandom() {
+        // It is not really efficient to load the file and parse it at each read, but the goal
+        // is to idd be inefficient :)
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(
                     App.class.getResourceAsStream("/quotes.txt")));
